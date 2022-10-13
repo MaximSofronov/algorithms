@@ -10,7 +10,7 @@ class Solution {
         int midValue = nums[midIndex];
         if (midValue == target) {
             return midIndex;
-        } else if (midIndex == left || midIndex == right) {
+        } else if (midIndex == left && midIndex == right) {
             return -1;
         }
         if (midValue < target) {
