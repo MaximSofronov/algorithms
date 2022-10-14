@@ -16,6 +16,6 @@ class Solution {
         if (midValue < target) {
             return binarySearch(nums, midIndex + 1, right, target);
         }
-        return binarySearch(nums, left, midIndex - 1, target);
+        return binarySearch(nums, left, Math.max(midIndex - 1, 0), target);
     }
 }
